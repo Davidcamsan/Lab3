@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Lab3.Views.MenuView"
+             x:Name="MenuView"
+             Title="Titulo">
+    
+<StackLayout Orientation="Vertical">
+
+  <!--Menu Items -->
+    <StackLayout Orientation="Vertical">
+        <ListView x:Name= "listaMenuMaster" ItemsSource="{Binding lstView}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.GoSelectedPageCommand, Source={x:Reference MenuView}}"
+                                                      CommandParameter="{Binding ID}"/>
+                                </StackLayout.GestureRecognizers>
+                                <Label Text="{Binding ViewPag}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</StackLayout>
+</ContentPage>

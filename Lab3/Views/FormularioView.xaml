@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Lab3.Views.FormularioView">
+    <StackLayout>
+        <Entry Placeholder="Latitud" Text="{Binding LugarActual.Latitud}"/>
+        <Entry Placeholder="Longitud" Text="{Binding LugarActual.Longitud}"/>
+        <Entry Placeholder="Nombre" Text="{Binding LugarActual.NombreSitio}"/>
+        <Entry Placeholder="Descripcion" Text="{Binding LugarActual.Descripcion}"/>
+
+        <Button Text="Agregar" Command="{Binding EnterNewLugarCommand}"/>
+    </StackLayout>
+</ContentPage>
