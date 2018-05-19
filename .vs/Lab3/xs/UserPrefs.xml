@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{41283E5D-1203-424A-A2C2-768297329E2A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Lab3/Views/MapView.xaml">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="Lab3/App.xaml.cs" Line="13" Column="1" />
       <File FileName="Lab3/App.xaml" Line="7" Column="1" />
       <File FileName="Lab3/Views/MapView.xaml.cs" Line="1" Column="2" />
-      <File FileName="Lab3/Views/MapView.xaml" Line="4" Column="87" />
+      <File FileName="Lab3/Views/MapView.xaml" Line="14" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
