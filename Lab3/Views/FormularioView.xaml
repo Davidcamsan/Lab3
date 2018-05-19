@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="Lab3.Views.FormularioView">
-    <StackLayout>
+    <StackLayout Spacing="10">
         <Entry Placeholder="Latitud" Text="{Binding LugarActual.Latitud}"/>
         <Entry Placeholder="Longitud" Text="{Binding LugarActual.Longitud}"/>
         <Entry Placeholder="Nombre" Text="{Binding LugarActual.NombreSitio}"/>

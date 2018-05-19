@@ -1,7 +1,7 @@
-﻿using Xamarin.Forms;
-using Lab3.Models;
-using Lab3.ViewModels;
-using Lab3.Views;
+﻿using System;
+using System.Collections.Generic;
+
+using Xamarin.Forms;
 
 namespace Lab3
 {
@@ -9,27 +9,8 @@ namespace Lab3
     {
         public App()
         {
-            InitializeComponent();
-            App.Current.MainPage = new MasterDetailPage
-            {
-                Master = new MenuView(),
-                Detail = new NavigationPage(new LogInView())
-            };
-        }
+           
 
-        protected override void OnStart()
-        {
-            // Handle when your app starts
-        }
-
-        protected override void OnSleep()
-        {
-            // Handle when your app sleeps
-        }
-
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
         }
     }
 }

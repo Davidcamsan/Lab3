@@ -1,11 +1,10 @@
-﻿<Properties StartupConfiguration="{AB2C0949-116E-4BD8-A4FD-648CF8955CCB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Lab3/ViewModels/UsuarioViewModel.cs">
+﻿<Properties StartupConfiguration="{41283E5D-1203-424A-A2C2-768297329E2A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lab3/Views/MapView.xaml">
     <Files>
-      <File FileName="Lab3/ViewModels/UsuarioViewModel.cs" Line="114" Column="9" />
-      <File FileName="Lab3/Views/MenuView.xaml" Line="30" Column="1" />
-      <File FileName="Lab3/Views/MenuView.xaml.cs" Line="15" Column="61" />
-      <File FileName="Lab3/Models/UsuarioModel.cs" Line="30" Column="172" />
-      <File FileName="Lab3/App.xaml.cs" Line="15" Column="41" />
+      <File FileName="Lab3/App.xaml.cs" Line="13" Column="1" />
+      <File FileName="Lab3/App.xaml" Line="7" Column="1" />
+      <File FileName="Lab3/Views/MapView.xaml.cs" Line="1" Column="2" />
+      <File FileName="Lab3/Views/MapView.xaml" Line="4" Column="87" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -13,9 +12,7 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Lab3.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
-  <MonoDevelop.Ide.ItemProperties.Lab3.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E54572E0-8A35-4BC7-A791-99069E5EB421" FirstBuild="True">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.Lab3.iOS>
+  <MonoDevelop.Ide.ItemProperties.Lab3.Droid PreferredExecutionTarget="Android.520381cffad894eb" />
+  <MonoDevelop.Ide.ItemProperties.Lab3.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E54572E0-8A35-4BC7-A791-99069E5EB421" />
   <MultiItemStartupConfigurations />
 </Properties>

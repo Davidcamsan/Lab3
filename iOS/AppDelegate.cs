@@ -16,6 +16,8 @@ namespace Lab3.iOS
 
             LoadApplication(new App());
 
+            Xamarin.FormsMaps.Init();
+
             return base.FinishedLaunching(app, options);
         }
     }

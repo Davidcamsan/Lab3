@@ -1,7 +1,9 @@
 ﻿using System;
+using Xamarin.Forms.Maps;
+using Realms;
 namespace Lab3.Models
 {
-    public class LugarModel
+    public class LugarModel : RealmObject
     {
         public LugarModel()
         {

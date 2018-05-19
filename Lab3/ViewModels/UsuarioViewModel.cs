@@ -83,6 +83,7 @@ namespace Lab3.ViewModels
 
         }
 
+        public ObservableCollection<LugarModel> lstLocations = new ObservableCollection<LugarModel>();
 
         //LUGAR ESCOGIDO DEL USUARIO ESCOGIDO
         private LugarModel _LugarActual = new LugarModel();
@@ -107,6 +108,8 @@ namespace Lab3.ViewModels
         public ICommand AuthenticateUserCommand { get; set; }
         public ICommand EnterNewLugarCommand { get; set; }
         public ICommand GoSelectedPageCommand { get; set; }
+        public ICommand SignUpPageCommand { get; set; }
+        public ICommand SignUpSaveCommand { get; set; }
         #endregion
 
 
@@ -117,7 +120,12 @@ namespace Lab3.ViewModels
             UsuarioActual = lstUsuarios.Where(x => x.Email == InputEmail && x.Password == InputPassword).FirstOrDefault();
             if(UsuarioActual.Email != null)
             {
-                ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new FormularioView());
+                App.Current.MainPage = new MasterDetailPage
+                {
+                    Master = new MenuView(),
+                    Detail = new NavigationPage(new FormularioView())
+                };
+
             }
  
         }
@@ -144,6 +152,20 @@ namespace Lab3.ViewModels
 
             }
         }
+
+
+        private void SignUpPage()
+        {
+            App.Current.MainPage= new SignUpView();
+        }
+
+
+        private void SignUpSave()
+        {
+            UsuarioModel.SalvarUsuario(UsuarioActual);
+            App.Current.MainPage = new LogInView();
+
+        }
         #endregion
 
         private async void InitClass()
@@ -157,6 +179,8 @@ namespace Lab3.ViewModels
             AuthenticateUserCommand = new Command(AuthenticateUser);
             EnterNewLugarCommand = new Command(EnterNewLugar);
             GoSelectedPageCommand = new Command<int>(GoSelectedPage);
+            SignUpPageCommand = new Command(SignUpPage);
+            SignUpSaveCommand = new Command(SignUpSave);
         }
 
 
